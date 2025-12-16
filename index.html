@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,8 @@
     </audio>
 
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             display: flex;
@@ -147,6 +149,7 @@
         }
     </style>
 </head>
+
 <body>
     <audio id="bgMusic" autoplay loop>
         <source src="ThemeSong.mp3" type="audio/mpeg">
@@ -182,6 +185,7 @@
     <script>
         const validCredentials = [
             { username: 'Admin', password: '12345' },
+            { username: 'admin', password: '12345' },
             { username: 'Rudra', password: '17122007' },
             { username: 'Shivangi', password: '12345' },
             { username: 'Shreyanshi', password: '12345' },
@@ -198,7 +202,7 @@
             { username: 'Anshul', password: '12345' }
         ];
 
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
             var username = document.getElementById('username').value.trim();
             var password = document.getElementById('password').value.trim();
 
@@ -230,7 +234,7 @@
                 feedbackVideo.src = '2.mp4';
                 videoOverlay.style.display = 'block';
                 feedbackVideo.play();
-                feedbackVideo.addEventListener('ended', function() {
+                feedbackVideo.addEventListener('ended', function () {
                     window.location.href = 'main.html';
                 });
             } else {
@@ -240,8 +244,9 @@
             }
         });
         var audio = new Audio('gun-shot.mp3');
-                audio.autoplay();
+        audio.autoplay();
     </script>
 
 </body>
+
 </html>
